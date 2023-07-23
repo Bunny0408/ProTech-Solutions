@@ -33,6 +33,8 @@
   <!-- responsive style -->
   <link href="css/responsive.css" rel="stylesheet" />
 </head>
+<style>
+</style>
 
 
 <body>
@@ -286,7 +288,7 @@
 
     
     <!-- contact section -->
-    <form id="contactForm" action="http://localhost:3000/send-email" method="POST" onsubmit="submitForm(event)">
+    <form  >
     <section class="contact_section" id="contact_section">
         <div class="container">
           <div class="heading_container">
@@ -297,12 +299,29 @@
           <div class="row">
             <div class="col-md-6">
               <div class="contact_form">
-                <form id="contactForm">
-                  <input type="text" name="name" placeholder="Name">
-                  <input type="email" name="email" placeholder="Email">
-                  <input type="text" name="message" placeholder="Message" class="message_input">
-                  <button type="submit">Send</button>
+                <form>
+
                 </form>
+                
+                <div class="container">
+                  <h1>Drop A Message.</h1>
+                  <form target="_blank" action="https://formsubmit.co/protechsolution01@gmail.com" method="POST">
+                    <div class="form-group">
+                      <div class="form-row">
+                        <div class="col">
+                          <input type="text" name="name" class="form-control" placeholder="Full Name" required>
+                        </div>
+                        <div class="col">
+                          <input type="email" name="email" class="form-control" placeholder="Email Address"  required>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <textarea placeholder="Your Message"  class="form-control" class="message_input"  name="message" rows="10"  required> </textarea>
+                    </div>
+                    <button type="submit" class="btn btn-lg btn-dark btn-block">Submit Form</button>
+                  </form>
+                </div>
               </div>
             </div>
             <div class="col-md-6">
@@ -351,8 +370,7 @@
   <!-- footer section -->
   <section class="container-fluid footer_section">
     <p>
-      Copyright &copy; 2019 All Rights Reserved By
-      <a href="https://html.design/">ProTech Solution</a>
+      Copyright &copy; 2019 All Rights Reserved By ProTech Solution
     </p>
   </section>
   <!-- footer section -->
