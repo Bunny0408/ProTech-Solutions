@@ -615,3 +615,14 @@ a:focus {
 
 /* end footer section*/
 /*# sourceMappingURL=style.css.map */
+
+@media (max-width: 992px) {
+  /* Override the text color to white */
+  .detail-box p,
+  .detail-box h3 {
+    color: white;
+  }
+  .white{
+    background-color: white;
+  }
+}
